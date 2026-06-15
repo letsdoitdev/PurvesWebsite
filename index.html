@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arthur Purves for Congress 2026 | Cut the Deficit Without Cutting a Program</title>
-  <meta name="description" content="Arthur Purves, Republican for Congress in Virginia's 11th District. A plan to slash the federal deficit by stopping the chronic disease epidemic, taking on Big Food and Big Pharma, without cutting a single program." />
+  <meta name="description" content="Arthur Purves, Republican for Congress in Virginia's 11th District. A plan to slash the federal deficit by stopping the chronic disease epidemic, taking on Big Food and Big Med, without cutting a single program." />
 
   <!-- Google Fonts: Inter + Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -258,15 +258,6 @@
       letter-spacing: 0.01em;
     }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 30px; }
-    .hero-trust {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-      font-size: 0.92rem;
-      color: rgba(255,255,255,0.78);
-    }
-    .hero-trust span { display: inline-flex; align-items: center; gap: 8px; }
-    .hero-trust i { color: var(--green-light); }
 
     /* Hero card */
     .hero-card {
@@ -413,7 +404,7 @@
     .quote-content blockquote .hl { color: #ffd5d9; }
     .quote-cite { margin-top: 24px; color: #9fc3e0; font-weight: 600; letter-spacing: 0.04em; }
 
-    /* ===== Big Food / Big Pharma ===== */
+    /* ===== Big Food / Big Med ===== */
     .villains {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -493,7 +484,7 @@
       display: grid;
       grid-template-columns: 0.8fr 1.2fr;
       gap: 56px;
-      align-items: center;
+      align-items: start;
     }
     .about-portrait {
       position: relative;
@@ -591,6 +582,22 @@
       margin-bottom: 28px;
     }
     .hero-cred i { color: var(--gold); }
+    .hero-tagline {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .about-disclosure {
+      margin-top: 22px;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
 
     /* Food guidance block + disclaimer */
     .food-guide {
@@ -709,15 +716,6 @@
       color: rgba(255,255,255,0.8);
       letter-spacing: 0.02em;
     }
-    .socials { display: flex; gap: 12px; }
-    .socials a {
-      width: 38px; height: 38px;
-      border-radius: 10px;
-      display: grid; place-items: center;
-      background: rgba(255,255,255,0.08);
-      transition: background 0.2s ease;
-    }
-    .socials a:hover { background: var(--blue); color: #fff; }
 
     /* ===== Responsive ===== */
     @media (max-width: 940px) {
@@ -803,6 +801,7 @@
           <span class="hero-id"><span class="dot"></span> For Virginia's 11th District</span>
           <div class="hero-name">Arthur Purves</div>
           <div class="hero-role">Republican for Congress, Virginia's 11th District, 2026</div>
+          <div class="hero-tagline">Purves ... rhymes with Congress!</div>
           <h1>America Is Going Broke <span class="accent">Paying For Sick People</span></h1>
           <p class="hero-cred"><i class="fa-solid fa-award"></i> 29-year president of the Fairfax County Taxpayers Alliance</p>
           <p class="hero-sub">
@@ -813,10 +812,6 @@
           <div class="hero-actions">
             <a href="#join" class="btn btn-red"><i class="fa-solid fa-bullhorn"></i> Support Arthur</a>
             <a href="#solution" class="btn btn-ghost"><i class="fa-solid fa-arrow-down"></i> See the Plan</a>
-          </div>
-          <div class="hero-trust">
-            <span><i class="fa-solid fa-utensils"></i> Take on Big Food &amp; Big Pharma</span>
-            <span><i class="fa-solid fa-piggy-bank"></i> Protect every program</span>
           </div>
         </div>
 
@@ -954,20 +949,20 @@
             <h3>Big Food</h3>
           </div>
           <p>
-            Big Food <strong>profits from making us sick</strong>. Ultra-processed products,
-            seed oils, and artificial additives are engineered to be over-eaten, driving the
-            obesity, diabetes, and heart disease that drive our health bills through the roof.
+            <strong>Big Food is making us sick.</strong>
           </p>
         </div>
         <div class="villain-card">
           <div class="vhead">
             <span class="vicon"><i class="fa-solid fa-pills"></i></span>
-            <h3>Big Pharma</h3>
+            <h3>Big Med</h3>
           </div>
           <p>
-            Big Pharma <strong>profits from keeping us on pills forever, not curing us</strong>.
-            A lifetime of prescriptions is a lifetime of revenue. Prevention doesn't sell drugs,
-            so prevention gets ignored.
+            Big Med has no financial incentive to cure us; rather it makes money by having us
+            take pills and undergo medical procedures. When you tell the doctor you have high
+            blood pressure, the doctor should say, "Let's find what's causing your high blood
+            pressure." Instead, the doctor prescribes pills you must take for the rest of your
+            life, which do not cure the disease and may have bad side effects.
           </p>
         </div>
       </div>
@@ -986,6 +981,16 @@
     </div>
 
     <div class="container">
+      <div class="food-guide" style="margin-top:0; margin-bottom:30px;">
+        <h3>Why We're Sick</h3>
+        <p>
+          It turns out that much chronic disease, including mental illness, is caused by
+          unregulated artificial additives in our food and by the bad federal nutritional
+          advice of the last 40 years: "Eat high carb, lean meat, and low [saturated] fat."
+          That is a prescription for diabetes, which is now appearing in children.
+        </p>
+      </div>
+
       <div class="sol-cols">
         <div class="sol-panel sol-eat">
           <div class="sol-head">
@@ -1012,8 +1017,6 @@
             <li><i class="fa-solid fa-xmark"></i> Ultra-processed foods</li>
             <li><i class="fa-solid fa-xmark"></i> Seed oils</li>
             <li><i class="fa-solid fa-xmark"></i> Artificial additives</li>
-            <li><i class="fa-solid fa-xmark"></i> Engineered junk food</li>
-            <li><i class="fa-solid fa-xmark"></i> Disease-driving products</li>
           </ul>
         </div>
       </div>
@@ -1021,21 +1024,28 @@
       <div class="food-guide">
         <h3>How to Eat Real Food</h3>
         <p>
-          Eat around the edge of the grocery store: full-fat dairy, eggs, red meat, bread
-          without additives (e.g., Trader Joe's Tuscan Pane), fruits, and vegetables. Avoid
-          anything in a box or a bag with a bar code. Avoid anything with Canola oil or the
-          other seed oils.
+          We can prevent and often reverse chronic disease by eating "real food", as our
+          grandparents did. Eat around the edge of the grocery store: full-fat dairy, eggs,
+          red meat, bread without additives (e.g., Trader Joe's Tuscan Pane), fruits, and
+          vegetables. Avoid anything in a box or a bag with a bar code! Avoid anything with
+          Canola oil or the other "seed oils", which are themselves problematic, and you'll
+          avoid the chemical additives.
         </p>
-        <p class="aldi">Aldi's is removing 44 chemicals from its private-label foods.</p>
-        <p class="disclaimer">The above is not medical advice. Everybody is different.</p>
+        <p class="aldi">
+          You cannot eat most of what's in the grocery store, except maybe at Aldi's, which
+          is removing 44 chemicals from its private-label foods.
+        </p>
+        <p class="disclaimer">
+          The above is not medical advice. It is "food for thought"! A lot comes from YouTube,
+          so be skeptical. Everybody is different. I'm a retired computer programmer with no
+          medical credentials, except I'm 77, taking no prescriptions, and feel great.
+        </p>
       </div>
 
       <div class="sol-banner">
-        <h3>Cut the Deficit Without Cutting a Program</h3>
+        <h3>Make America Healthy Again!</h3>
         <p>
-          When America gets healthy, health care costs fall, and the deficit falls with them.
-          No seniors lose benefits. No families lose support. We simply stop paying the
-          staggering bill for a preventable epidemic.
+          Eat real food! That's how to slash the federal deficit without cutting a program!
         </p>
       </div>
     </div>
@@ -1061,9 +1071,8 @@
             <span class="about-badge"><i class="fa-solid fa-prescription-bottle-medical"></i> No prescription medications</span>
           </div>
           <p>
-            Arthur Purves is a retired computer programmer. At 77 years old, he takes
-            <strong>no prescription medications</strong>, because he lives this message
-            every day.
+            I'm a retired computer programmer with no medical credentials, except I'm 77,
+            taking no prescriptions, and feel great.
           </p>
           <blockquote class="about-quote">
             "As president of the Fairfax County Taxpayers Alliance, I've spent 29 years
@@ -1071,12 +1080,39 @@
             better policies."
           </blockquote>
           <p>
-            He is not running to score points for one party. This is a message for Democrats,
-            Republicans, and everyone in between.
+            Arthur Purves grew up in Washington D.C. and earned a BA, MS, and MBA from the
+            University of Pennsylvania. He and his late wife, Carol, moved to Vienna in 1976.
+            They have two children, who graduated from Fairfax County Public Schools in the
+            mid-1990s. Arthur worked as a computer programmer for 40 years and is now retired.
+            He belongs to the Church of Jesus Christ of Latter-day Saints.
           </p>
-          <blockquote class="about-quote">
-            "I practice what I preach: I eat real food and feel great."
-          </blockquote>
+          <p>
+            For 29 years he has been president of the Fairfax County Taxpayers Alliance. He was
+            treasurer for the Fairfax Committee of 100 for ten years, was a member of the 2014
+            Fairfax County Meals Tax Task Force, and in 2013 served on the Hunter Mill Citizen
+            Budget Committee. He has served on three Fairfax County Public Schools advisory
+            committees and is a member of the League of Women Voters and the Fairfax branch of
+            the NAACP.
+          </p>
+          <p>
+            He was a Scoutmaster for his church, including for a Latino troop, and was elected
+            to the Order of the Arrow. More recently he has served as an election officer,
+            helped refugees with asylum applications, and has been teaching ESL along with a
+            computer basics class for ESL students. He has a General Class amateur radio
+            license, KQ4AXT.
+          </p>
+          <p>
+            Arthur has run in seven general elections: for school board (1995, 2003); for
+            county chairman against Kate Hanley as an independent (1999); for delegate (2007);
+            as the Republican candidate for county chairman against Sharon Bulova (2015); for
+            state senate against Janet Howell (2019); and a third time for county chairman
+            against Jeff McKay (2023). As Taxpayers Alliance president, Arthur has testified at
+            most county and school proposed budget hearings since 1997.
+          </p>
+          <p class="about-disclosure">
+            Full Disclosure: The candidate's retirement income includes significant income
+            from oil.
+          </p>
         </div>
       </div>
     </div>
@@ -1093,9 +1129,6 @@
             The 2026 election decides who represents Virginia's 11th District. Make sure you
             are registered and ready. Here are the dates you need to know.
           </p>
-          <a href="https://www.elections.virginia.gov/registration/" class="btn btn-light btn-red" target="_blank" rel="noopener">
-            <i class="fa-solid fa-id-card"></i> Check Your Registration
-          </a>
         </div>
         <div class="vote-deadline">
           <div class="deadline-item">
@@ -1136,7 +1169,7 @@
     <div class="container">
       <h2>Support Arthur Purves for Congress</h2>
       <p>
-        Help take on Big Food and Big Pharma, and cut the deficit without cutting a single
+        Help take on Big Food and Big Med, and cut the deficit without cutting a single
         program. Add your name and stand for a healthier, solvent America.
       </p>
       <div class="cta-actions">
@@ -1164,13 +1197,6 @@
             A campaign to cut the federal deficit by stopping the chronic disease epidemic.
             Republican for Congress, Virginia's 11th District, 2026.
           </p>
-          <div class="socials" style="margin-top:20px;">
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="mailto:arthur@votepurves.org" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          </div>
         </div>
 
         <div class="footer-nav">
