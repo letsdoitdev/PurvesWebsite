@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arthur Purves for Congress 2026 | Cut the Deficit Without Cutting a Program</title>
-  <meta name="description" content="Arthur Purves for Congress, Virginia's 11th District. A bipartisan plan to slash the federal deficit by ending the chronic disease epidemic — taking on Big Food and Big Pharma. Not left. Not right. Just healthy." />
+  <meta name="description" content="Arthur Purves, Republican for Congress in Virginia's 11th District. A plan to slash the federal deficit by stopping the chronic disease epidemic, taking on Big Food and Big Pharma, without cutting a single program." />
 
   <!-- Google Fonts: Inter + Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -300,7 +300,7 @@
     }
     .hero-stat .label { font-size: 0.92rem; color: rgba(255,255,255,0.8); margin-top: 6px; }
 
-    /* Bipartisan banner */
+    /* Quick points banner */
     .unite-bar {
       background: var(--paper);
       border-bottom: 1px solid var(--line);
@@ -549,6 +549,68 @@
       font-style: italic;
     }
     .about-text p { color: var(--muted); font-size: 1.08rem; margin-bottom: 16px; }
+    .about-portrait.has-photo { aspect-ratio: auto; background: var(--navy-deep); }
+    .about-img { width: 100%; height: auto; display: block; }
+
+    /* Hero candidate identity */
+    .hero-id {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .hero-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+      color: #fff;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    .hero-role {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #9fc3e0;
+      margin-bottom: 22px;
+    }
+    .hero-cred {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: #ffd5d9;
+      margin-bottom: 28px;
+    }
+    .hero-cred i { color: var(--gold); }
+
+    /* Food guidance block + disclaimer */
+    .food-guide {
+      margin-top: 30px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--green);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      box-shadow: var(--shadow-sm);
+    }
+    .food-guide h3 { font-size: 1.3rem; color: var(--navy); margin-bottom: 14px; }
+    .food-guide p { color: var(--ink); font-size: 1.05rem; margin-bottom: 14px; }
+    .food-guide .aldi { color: var(--green); font-weight: 600; }
+    .disclaimer {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--muted);
+      margin-top: 8px;
+    }
 
     /* ===== Voting info box ===== */
     .vote {
@@ -723,7 +785,7 @@
           <li><a href="#about">About Arthur</a></li>
           <li><a href="#vote">Vote</a></li>
           <li class="nav-cta">
-            <a href="#join" class="btn btn-red nav-donate-top"><i class="fa-solid fa-bullhorn"></i> Join the Movement</a>
+            <a href="#join" class="btn btn-red nav-donate-top"><i class="fa-solid fa-bullhorn"></i> Support Arthur</a>
           </li>
         </ul>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -738,19 +800,21 @@
     <div class="container">
       <div class="hero-inner">
         <div class="hero-text">
-          <span class="hero-badge"><span class="dot"></span> Not Left. Not Right. Just Healthy.</span>
+          <span class="hero-id"><span class="dot"></span> For Virginia's 11th District</span>
+          <div class="hero-name">Arthur Purves</div>
+          <div class="hero-role">Republican for Congress, Virginia's 11th District, 2026</div>
           <h1>America Is Going Broke <span class="accent">Paying For Sick People</span></h1>
+          <p class="hero-cred"><i class="fa-solid fa-award"></i> 29-year president of the Fairfax County Taxpayers Alliance</p>
           <p class="hero-sub">
-            We can slash the federal deficit <strong>without cutting a single program</strong> —
-            by preventing the chronic disease epidemic that's bankrupting the country.
+            We can slash the federal deficit <strong>without cutting a single program</strong>.
+            Stop chronic disease, and you stop the spending that is bankrupting the country.
           </p>
           <p class="hero-kicker">Cut the Deficit Without Cutting a Program.</p>
           <div class="hero-actions">
-            <a href="#join" class="btn btn-red"><i class="fa-solid fa-bullhorn"></i> Join the Movement</a>
+            <a href="#join" class="btn btn-red"><i class="fa-solid fa-bullhorn"></i> Support Arthur</a>
             <a href="#solution" class="btn btn-ghost"><i class="fa-solid fa-arrow-down"></i> See the Plan</a>
           </div>
           <div class="hero-trust">
-            <span><i class="fa-solid fa-handshake-angle"></i> A bipartisan message</span>
             <span><i class="fa-solid fa-utensils"></i> Take on Big Food &amp; Big Pharma</span>
             <span><i class="fa-solid fa-piggy-bank"></i> Protect every program</span>
           </div>
@@ -768,31 +832,31 @@
           </div>
           <div class="hero-stat">
             <div class="num">#1</div>
-            <div class="label">Sickest nation on earth — and the highest health spending</div>
+            <div class="label">Sickest nation on earth, with the highest health spending</div>
           </div>
         </aside>
       </div>
     </div>
   </section>
 
-  <!-- ===== Bipartisan bar ===== -->
+  <!-- ===== Quick points bar ===== -->
   <section class="unite-bar">
     <div class="container">
       <div class="unite-grid">
         <div class="unite-item">
-          <i class="fa-solid fa-handshake"></i>
-          <strong>Both Parties Agree</strong>
-          <span>Democrats and Republicans both want lower health costs and a smaller deficit</span>
+          <i class="fa-solid fa-list-check"></i>
+          <strong>One Honest Plan</strong>
+          <span>Rather than cut programs, reduce demand through better policies</span>
         </div>
         <div class="unite-item">
           <i class="fa-solid fa-shield-heart"></i>
-          <strong>No Programs Cut</strong>
-          <span>Save trillions by keeping people healthy — not by gutting benefits</span>
+          <strong>Zero Programs Cut</strong>
+          <span>Keep people healthy and the spending falls. No benefits get gutted</span>
         </div>
         <div class="unite-item">
-          <i class="fa-solid fa-people-group"></i>
-          <strong>Everyone Wins</strong>
-          <span>Taking on Big Food and Big Pharma is something we can all get behind</span>
+          <i class="fa-solid fa-piggy-bank"></i>
+          <strong>Real Savings</strong>
+          <span>Stop chronic disease and stop the bill that is bankrupting America</span>
         </div>
       </div>
     </div>
@@ -821,7 +885,7 @@
           <div class="stat-icon"><i class="fa-solid fa-landmark"></i></div>
           <div class="stat-num">$1<span class="unit">T</span></div>
           <div class="stat-label">Interest on the debt</div>
-          <p class="stat-desc">A trillion dollars a year — just to pay interest on what we already owe.</p>
+          <p class="stat-desc">A trillion dollars a year, just to pay interest on what we already owe.</p>
         </div>
         <div class="stat-card">
           <div class="stat-icon"><i class="fa-solid fa-heart-crack"></i></div>
@@ -836,7 +900,23 @@
         <p>
           The federal government now spends <strong>more on interest on the debt
           than on national defense</strong>. The cost of a sick nation is no longer
-          abstract — it is crowding out everything else.
+          abstract. It is crowding out everything else.
+        </p>
+      </div>
+
+      <div class="keyfact">
+        <i class="fa-solid fa-notes-medical"></i>
+        <p>
+          The CDC says <strong>90% of medical spending is for chronic disease</strong>,
+          including mental illness. Prevent the disease, and you cut the cost.
+        </p>
+      </div>
+
+      <div class="keyfact">
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <p>
+          The Federal Reserve <strong>prints money to finance deficits</strong>,
+          which is leading to hyperinflation.
         </p>
       </div>
     </div>
@@ -847,10 +927,10 @@
     <div class="container">
       <div class="quote-content">
         <blockquote>
-          America is the <span class="hl">sickest nation in the world</span> —
+          America is the <span class="hl">sickest nation in the world</span>
           and spends the <span class="hl">most on health care</span>.
         </blockquote>
-        <div class="quote-cite">&mdash; Arthur Purves, Candidate for Congress, VA-11</div>
+        <div class="quote-cite">Arthur Purves, Candidate for Congress, VA-11</div>
       </div>
     </div>
   </section>
@@ -875,7 +955,7 @@
           </div>
           <p>
             Big Food <strong>profits from making us sick</strong>. Ultra-processed products,
-            seed oils, and artificial additives are engineered to be over-eaten — driving the
+            seed oils, and artificial additives are engineered to be over-eaten, driving the
             obesity, diabetes, and heart disease that drive our health bills through the roof.
           </p>
         </div>
@@ -885,7 +965,7 @@
             <h3>Big Pharma</h3>
           </div>
           <p>
-            Big Pharma <strong>profits from keeping us on pills forever — not curing us</strong>.
+            Big Pharma <strong>profits from keeping us on pills forever, not curing us</strong>.
             A lifetime of prescriptions is a lifetime of revenue. Prevention doesn't sell drugs,
             so prevention gets ignored.
           </p>
@@ -900,8 +980,8 @@
       <span class="eyebrow"><i class="fa-solid fa-handshake-angle"></i> The Solution</span>
       <h2 class="section-title">Left and Right Agree: The System Is Making Us Sick</h2>
       <p class="section-lead">
-        Make America Healthy Again is not a partisan slogan — it's common sense. Two simple
-        ideas can bend the cost curve and shrink the deficit for everyone.
+        Make America Healthy Again is common sense. Two simple ideas can lower health
+        costs and shrink the deficit for Democrats, Republicans, and everyone in between.
       </p>
     </div>
 
@@ -927,7 +1007,7 @@
             <i class="fa-solid fa-ban"></i>
             <h3>Tax What Makes Us Sick</h3>
           </div>
-          <p class="sub">Put the cost where it belongs — on the products driving the epidemic.</p>
+          <p class="sub">Put the cost where it belongs, on the products driving the epidemic.</p>
           <ul class="sol-list">
             <li><i class="fa-solid fa-xmark"></i> Ultra-processed foods</li>
             <li><i class="fa-solid fa-xmark"></i> Seed oils</li>
@@ -938,10 +1018,22 @@
         </div>
       </div>
 
+      <div class="food-guide">
+        <h3>How to Eat Real Food</h3>
+        <p>
+          Eat around the edge of the grocery store: full-fat dairy, eggs, red meat, bread
+          without additives (e.g., Trader Joe's Tuscan Pane), fruits, and vegetables. Avoid
+          anything in a box or a bag with a bar code. Avoid anything with Canola oil or the
+          other seed oils.
+        </p>
+        <p class="aldi">Aldi's is removing 44 chemicals from its private-label foods.</p>
+        <p class="disclaimer">The above is not medical advice. Everybody is different.</p>
+      </div>
+
       <div class="sol-banner">
         <h3>Cut the Deficit Without Cutting a Program</h3>
         <p>
-          When America gets healthy, health care costs fall — and the deficit falls with them.
+          When America gets healthy, health care costs fall, and the deficit falls with them.
           No seniors lose benefits. No families lose support. We simply stop paying the
           staggering bill for a preventable epidemic.
         </p>
@@ -953,8 +1045,8 @@
   <section class="section" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-portrait">
-          <span class="mono">AP</span>
+        <div class="about-portrait has-photo">
+          <img class="about-img" src="https://www.votepurves.org/IMAGES_C2025/210314_purvesCrp.jpg" alt="Arthur Purves" style="width:100%; border-radius: 12px;" />
           <div class="pfoot">
             <strong>Arthur Purves</strong>
             <span>Candidate for Congress &middot; Virginia's 11th District</span>
@@ -962,25 +1054,28 @@
         </div>
         <div class="about-text">
           <span class="eyebrow"><i class="fa-solid fa-user"></i> About Arthur</span>
-          <h2 class="section-title">I Practice What I Preach</h2>
+          <h2 class="section-title">Meet Arthur Purves</h2>
           <div class="about-badges">
             <span class="about-badge"><i class="fa-solid fa-laptop-code"></i> Retired computer programmer</span>
             <span class="about-badge"><i class="fa-solid fa-cake-candles"></i> Age 77</span>
-            <span class="about-badge"><i class="fa-solid fa-prescription-bottle-medical"></i> Zero prescription medications</span>
+            <span class="about-badge"><i class="fa-solid fa-prescription-bottle-medical"></i> No prescription medications</span>
           </div>
           <p>
-            Arthur Purves spent his career as a computer programmer — a problem-solver who
-            believes in looking honestly at the data. At 77 years old, he takes
-            <strong>no prescription medications</strong>, because he lives the message of
-            this campaign every day.
+            Arthur Purves is a retired computer programmer. At 77 years old, he takes
+            <strong>no prescription medications</strong>, because he lives this message
+            every day.
           </p>
+          <blockquote class="about-quote">
+            "As president of the Fairfax County Taxpayers Alliance, I've spent 29 years
+            studying how to cut taxes. Rather than cut programs, reduce demand through
+            better policies."
+          </blockquote>
           <p>
-            He's not running to score points for one party. He's running because the math is
-            clear: a healthier America is a solvent America. This is a message for Democrats,
+            He is not running to score points for one party. This is a message for Democrats,
             Republicans, and everyone in between.
           </p>
           <blockquote class="about-quote">
-            "I practice what I preach — I eat real food and feel great."
+            "I practice what I preach: I eat real food and feel great."
           </blockquote>
         </div>
       </div>
@@ -995,8 +1090,8 @@
           <span class="eyebrow on-dark"><i class="fa-solid fa-check-to-slot"></i> Make Your Voice Count</span>
           <h2>Your Vote Can Help Heal the Budget</h2>
           <p>
-            The 2026 election decides who represents Virginia's 11th District. Make sure you're
-            registered and ready — this is how we send a bipartisan message to Washington.
+            The 2026 election decides who represents Virginia's 11th District. Make sure you
+            are registered and ready. Here are the dates you need to know.
           </p>
           <a href="https://www.elections.virginia.gov/registration/" class="btn btn-light btn-red" target="_blank" rel="noopener">
             <i class="fa-solid fa-id-card"></i> Check Your Registration
@@ -1004,24 +1099,31 @@
         </div>
         <div class="vote-deadline">
           <div class="deadline-item">
-            <span class="di-icon"><i class="fa-solid fa-calendar-day"></i></span>
+            <span class="di-icon"><i class="fa-solid fa-flag-usa"></i></span>
+            <div class="di-text">
+              <small>Election Day</small>
+              <strong>Tuesday, November 3, 2026</strong>
+            </div>
+          </div>
+          <div class="deadline-item">
+            <span class="di-icon"><i class="fa-solid fa-calendar-week"></i></span>
+            <div class="di-text">
+              <small>Early In-Person Voting</small>
+              <strong>September 18 through October 31, 2026</strong>
+            </div>
+          </div>
+          <div class="deadline-item">
+            <span class="di-icon"><i class="fa-solid fa-id-card"></i></span>
             <div class="di-text">
               <small>Voter Registration Deadline</small>
               <strong>October 23, 2026</strong>
             </div>
           </div>
           <div class="deadline-item">
-            <span class="di-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="di-icon"><i class="fa-solid fa-envelope-open-text"></i></span>
             <div class="di-text">
-              <small>District</small>
-              <strong>Virginia's 11th Congressional District</strong>
-            </div>
-          </div>
-          <div class="deadline-item">
-            <span class="di-icon"><i class="fa-solid fa-flag-usa"></i></span>
-            <div class="di-text">
-              <small>Election</small>
-              <strong>2026 General Election</strong>
+              <small>Mail-In Ballot Application Deadline</small>
+              <strong>October 23, 2026</strong>
             </div>
           </div>
         </div>
@@ -1032,13 +1134,13 @@
   <!-- ===== CTA ===== -->
   <section class="section cta" id="join">
     <div class="container">
-      <h2>Join a Movement Both Sides Can Believe In</h2>
+      <h2>Support Arthur Purves for Congress</h2>
       <p>
-        Help take on Big Food and Big Pharma — and cut the deficit without cutting a single
+        Help take on Big Food and Big Pharma, and cut the deficit without cutting a single
         program. Add your name and stand for a healthier, solvent America.
       </p>
       <div class="cta-actions">
-        <a href="mailto:arthur@votepurves.org?subject=I want to join the movement" class="btn btn-light">
+        <a href="mailto:arthur@votepurves.org?subject=I want to support Arthur Purves" class="btn btn-light">
           <i class="fa-solid fa-envelope"></i> Get Involved
         </a>
         <a href="#about" class="btn btn-ghost"><i class="fa-solid fa-circle-info"></i> Learn More</a>
@@ -1059,13 +1161,14 @@
             </span>
           </a>
           <p>
-            A bipartisan campaign to cut the federal deficit by ending the chronic disease
-            epidemic. Not left. Not right. Just healthy.
+            A campaign to cut the federal deficit by stopping the chronic disease epidemic.
+            Republican for Congress, Virginia's 11th District, 2026.
           </p>
           <div class="socials" style="margin-top:20px;">
             <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             <a href="mailto:arthur@votepurves.org" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
@@ -1077,7 +1180,7 @@
             <li><a href="#solution">The Solution</a></li>
             <li><a href="#about">About Arthur</a></li>
             <li><a href="#vote">Voting Info</a></li>
-            <li><a href="#join">Join the Movement</a></li>
+            <li><a href="#join">Support Arthur</a></li>
           </ul>
         </div>
 
